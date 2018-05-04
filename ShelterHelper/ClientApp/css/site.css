@@ -1,0 +1,31 @@
+.cardLanding {
+    width: 18rem;
+}
+
+/* Highlighting rules for nav menu items */
+li.link-active a,
+li.link-active a:hover,
+li.link-active a:focus {
+    background-color: #4189C7;
+    color: white;
+}
+
+.navbar ul {
+    float: none;
+}
+
+.navbar li {
+    float: none;
+    font-size: 20px;
+    margin: 6px;
+    color: whitesmoke;
+}
+
+    .navbar li a {
+        padding: 10px 16px;
+        border-radius: 4px;
+    }
+
+.navitem {
+    color: whitesmoke;
+}
