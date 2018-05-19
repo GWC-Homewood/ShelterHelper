@@ -18,13 +18,20 @@ export default class Home extends React.Component<RouteComponentProps<{}>, {}> {
 
                 <div className="col-sm-4">
                     <div className="card cardLanding">
-                        <div className="card-header">Search Pets</div>
+                        <div className="card-header">Pets</div>
                         <img className="card-img-top" src={petImage} alt="Register" />
                         <div className="card-body">
                             <p className="card-text"></p>
                         </div>
                         <div className="card-footer">
-                            <Link to={'/pets'} className="btn btn-primary">GO</Link>
+                            <div className='row'>
+                                <div className='col-md-4'>
+                                    <Link to={'/pets'} className="btn btn-primary">Search</Link>
+                                </div>
+                                <div className='col-md-4'>
+                                    <Link to={'/addPet'} className='btn btn-primary'>Add</Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

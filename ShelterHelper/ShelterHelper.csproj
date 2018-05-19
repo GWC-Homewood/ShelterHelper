@@ -23,11 +23,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\components\Pets\petAdd.tsx" />
+    <None Remove="ClientApp\components\Pets\petSearch.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SharedKernel\SharedKernel.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\components\Pets\" />
+    <TypeScriptCompile Include="ClientApp\components\Pets\petAdd.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\Pets\petSearch.tsx" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

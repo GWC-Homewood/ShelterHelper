@@ -15,6 +15,7 @@ export class Layout extends React.Component<{}, {}> {
                     <div className='nav navbar-nav'>
                         <ul className='nav navbar-nav'>
                             <li className='nav-item'><NavLink className='nav-link' exact to={'/'} activeClassName='active'><span className='sr-only'></span>Home</NavLink></li>
+                            <li className='nav-item'><NavLink className='nav-link' exact to={'/pets'} activeClassName='active'><span className='glyphicon glyphicon-home'></span>Pets</NavLink></li>
                             <li className='nav-item'><NavLink className='nav-link' to={'/parents'} activeClassName='active'><span className='glyphicon glyphicon-home'></span>Foster Parents</NavLink></li>
                             <li className='nav-item'><NavLink className='nav-link' to={'/sponsors'} activeClassName='active'><span className='glyphicon glyphicon-home'></span>Sponsors</NavLink></li>
                             <li className='nav-item'><NavLink className='nav-link' to={'/campaigns'} activeClassName='active'><span className='glyphicon glyphicon-home'></span>Campaigns</NavLink></li>
