@@ -11,9 +11,7 @@ type PetAddProps = PetStore.PetState
 export class PetAdd extends React.Component<PetAddProps, {}> {
     constructor(props: PetAddProps) {
         super(props);
-
     }
-
 
 
     public render() {
