@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <None Remove="ClientApp\components\Pets\petAdd.tsx" />
+    <None Remove="ClientApp\components\Pets\Pets-Main.tsx" />
     <None Remove="ClientApp\components\Pets\petSearch.tsx" />
   </ItemGroup>
 
@@ -33,6 +34,7 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\components\Pets\petAdd.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\Pets\Pets-Main.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Pets\petSearch.tsx" />
   </ItemGroup>
 
