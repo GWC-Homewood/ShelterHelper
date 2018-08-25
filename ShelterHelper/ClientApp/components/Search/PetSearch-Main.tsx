@@ -3,24 +3,25 @@ import { Link, RouteComponentProps } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { ApplicationState } from '../../store';
 import * as PetStore from '../../store/Pets';
+import { PetSearchBox } from '../Search/PetSearch-SearchBox';
 
-type PetProps = 
+type PetProps =
     PetStore.PetState
     & typeof PetStore.actionCreators
     & RouteComponentProps<{}>
 
 
- class PetMain extends React.Component<PetProps, {}> {
+class PetSearchMain extends React.Component<PetProps, {}> {
 
     public render() {
         return <div>
-                
+            <PetSearchBox/>
 
-            </div>
+        </div>
     }
 }
 
 export default connect(
     (state: ApplicationState) => ({ ...state.pets }),
     ({ ...PetStore.actionCreators })
-)(PetMain) as typeof PetMain;
+)(PetSearchMain) as typeof PetSearchMain;
