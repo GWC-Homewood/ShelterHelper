@@ -28,7 +28,8 @@
     <None Remove="ClientApp\components\Pets\Pets-Main.tsx" />
     <None Remove="ClientApp\components\Pets\Pets-Search.tsx" />
     <None Remove="ClientApp\components\Pets\petSearch.tsx" />
-    <None Remove="ClientApp\components\Search\PetSearch-Main.tsx" />
+    <None Remove="ClientApp\components\Pets\Search\PetSearch-Main.tsx" />
+    <None Remove="ClientApp\components\Pets\Search\PetSearch-Results.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,9 +38,10 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\components\Pets\Pets-Main.tsx" />
-    <TypeScriptCompile Include="ClientApp\components\Search\PetSearch-SearchBox.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\Pets\Search\PetSearch-Results.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\Pets\Search\PetSearch-SearchBox.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Pets\petSearch.tsx" />
-    <TypeScriptCompile Include="ClientApp\components\Search\PetSearch-Main.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\Pets\Search\PetSearch-Main.tsx" />
     <TypeScriptCompile Include="ClientApp\store\Pets.ts" />
   </ItemGroup>
 

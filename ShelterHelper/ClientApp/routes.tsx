@@ -4,7 +4,7 @@ import { Layout } from './components/Layout';
 import Home from './components/Home';
 import FetchData from './components/FetchData';
 import Counter from './components/Counter';
-import PetSearchMain from './components/Search/PetSearch-Main';
+import PetSearchMain from './components/Pets/Search/PetSearch-Main';
 
 export const routes = <Layout>
     <Route exact path='/' component={ Home } />

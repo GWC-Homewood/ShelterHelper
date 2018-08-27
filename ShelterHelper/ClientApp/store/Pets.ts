@@ -29,7 +29,7 @@ interface ReceiveCreatePet {
 type KnownAction = RequestCreatePet | ReceiveCreatePet;
 
 export const actionCreators = {
-    SavePet: (newPet: Pet): AppThunkAction<KnownAction> => (dispatch, getState) => {
+    SavePet: (newPet: Pet): AppThunkAction<KnownAction> => (dispatch, action) => {
 
     }
 };
