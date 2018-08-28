@@ -26,11 +26,15 @@ export default class Home extends React.Component<RouteComponentProps<{}>, {}> {
                         <div className="card-footer">
                             <div className='row'>
                                 <div className='col-md-4'>
-                                    <Link to={'/pets'} className="btn btn-primary">Search</Link>
+                                    <Link to={'/addPet'} className='btn btn-outline-success'>Active</Link>
                                 </div>
                                 <div className='col-md-4'>
-                                    <Link to={'/addPet'} className='btn btn-primary'>Add</Link>
+                                    <Link to={'/pets'} className="btn btn-outline-primary">Search</Link>
                                 </div>
+                                <div className='col-md-4'>
+                                    <Link to={'/addPet'} className='btn btn-outline-primary'>Create</Link>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -44,7 +48,7 @@ export default class Home extends React.Component<RouteComponentProps<{}>, {}> {
                             <p className="card-text"></p>
                         </div>
                         <div className="card-footer">
-                            <Link to={'/parents'} className="btn btn-primary">GO</Link>
+                            <Link to={'/parents'} className="btn btn-outline-primary">GO</Link>
                         </div>
                     </div>
                 </div>
@@ -58,7 +62,7 @@ export default class Home extends React.Component<RouteComponentProps<{}>, {}> {
                                 <p className="card-text"></p>
                             </div>
                             <div className="card-footer">
-                                <Link to={'/Sponsor'} className="btn btn-primary">GO</Link>
+                                <Link to={'/Sponsor'} className="btn btn-outline-primary">GO</Link>
                             </div>
                         </div>
                     </div>
