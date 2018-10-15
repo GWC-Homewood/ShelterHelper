@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 
 
+
 namespace ShelterHelper.Extensions
 {
     public static class ContextExtensions

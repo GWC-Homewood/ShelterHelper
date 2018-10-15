@@ -2,11 +2,16 @@
 import { Link, RouteComponentProps } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { ApplicationState } from '../../store';
+import * as PetStore from '../../store/Pets';
+
+type PetProps = 
+    PetStore.PetState
+    & typeof PetStore.actionCreators
+    & RouteComponentProps<{}>
 
 
-export default class PetMain extends React.Component<RouteComponentProps<{}>, {}> {
+ class PetMain extends React.Component<PetProps, {}> {
 
-    
     public render() {
         return <div>
                 
@@ -14,3 +19,8 @@ export default class PetMain extends React.Component<RouteComponentProps<{}>, {}
             </div>
     }
 }
+
+export default connect(
+    (state: ApplicationState) => ({ ...state.pets }),
+    ({ ...PetStore.actionCreators })
+)(PetMain) as typeof PetMain;

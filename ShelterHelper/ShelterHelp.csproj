@@ -23,9 +23,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\components\Pets\Pets-Add.tsx" />
     <None Remove="ClientApp\components\Pets\petAdd.tsx" />
     <None Remove="ClientApp\components\Pets\Pets-Main.tsx" />
+    <None Remove="ClientApp\components\Pets\Pets-Search.tsx" />
     <None Remove="ClientApp\components\Pets\petSearch.tsx" />
+    <None Remove="ClientApp\components\Pets\Search\PetSearch-Main.tsx" />
+    <None Remove="ClientApp\components\Pets\Search\PetSearch-Results.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,9 +37,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\components\Pets\petAdd.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Pets\Pets-Main.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\Pets\Search\PetSearch-Results.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\Pets\Search\PetSearch-SearchBox.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Pets\petSearch.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\Pets\Search\PetSearch-Main.tsx" />
+    <TypeScriptCompile Include="ClientApp\store\Pets.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\components\Pets\Details\" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

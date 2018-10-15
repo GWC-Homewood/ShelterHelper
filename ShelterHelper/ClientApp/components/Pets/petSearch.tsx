@@ -21,7 +21,15 @@ export default class PetSearch extends React.Component<RouteComponentProps<{}>, 
                 </div>
              </form>
             <br/>
-            <br/>
+            <br />
+
+            <div className="row">
+                <div className="form-check">
+                    <input className="form-check-input" type="checkbox" value="" id="dogCheck" />
+                    <label  className="form-check-label" htmlFor="dogCheck"  >Dog</label>
+                </div>
+            </div>
+
             <div className="row">
                 <div className="col-md-4">
                     <div className='checkbox'>
