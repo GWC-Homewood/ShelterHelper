@@ -1,0 +1,109 @@
+.cardLanding {
+    width: 18rem;
+}
+
+/* Highlighting rules for nav menu items */
+li.link-active a,
+li.link-active a:hover,
+li.link-active a:focus {
+    background-color: #4189C7;
+    color: white;
+}
+
+.navbar ul {
+    float: none;
+}
+
+.navbar li {
+    float: none;
+    font-size: 20px;
+    margin: 6px;
+    color: whitesmoke;
+}
+
+    .navbar li a {
+        padding: 10px 16px;
+        border-radius: 4px;
+    }
+
+.navitem {
+    color: whitesmoke;
+}
+
+.card-header {
+    background-color: #337ab7;
+    color: white;
+    font-weight: bold;
+    border-color: #337ab7;
+    padding-top: 5px;
+}
+
+.card-header-alert {
+    background-color: #cc5500;
+    border-color: #cc5500;
+}
+
+.card-footer {
+    border-color: #337ab7;
+    border-width: thin;
+    border-style: solid;
+    font-size: 12px;
+}
+
+
+.card-body {
+    border-color: #337ab7;
+    border-width: thin;
+    border-style: solid;
+    font-size: 12px;
+}
+
+.card-body-alert {
+    border-color: #cc5500;
+}
+
+.card-body-grid {
+    margin: 0px,0px,0px,0px !important;
+    padding: 0.1em 0.1em !important;
+}
+
+.card {
+    border-width: thin;
+    border-style: solid;
+}
+
+
+.k-combobox {
+    width: 100%;
+    font-size: 14px;
+}
+
+div.k-popup .k-item {
+    font-size: 12px;
+}
+
+.k-dropdown .k-dropdown-wrap {
+    height: 14px;
+}
+
+.k-dateinput {
+    font-size: 12px;
+    height: 35px;
+}
+
+.k-grid {
+    margin: 0px,0px,0px,0px !important;
+    padding: 0.1em 0.1em !important;
+}
+
+.k-grid-header, k-header {
+    font-weight: 400;
+    padding: 0.1em 0.1em;
+    font-size: 12px;
+}
+
+.k-grid td {
+    padding: 0.3em 0.3em;
+    margin: 0px,0px,0px,0px !important;
+    font-size: 12px;
+}
