@@ -5,27 +5,22 @@ import brandImage from '../images/PawCross.jpg';
 export default class NavMenu extends React.Component{
     render() {
         return <div>
-            <div className='navbar navbar-expand-lg navbar-dark bg-dark sticky-top'>
-                <div className='navbar-header'>
-                    <Link to={'/'} className='navbar-brand'><img width="30" height="30" src={brandImage} /> Shelter Helper </Link>
+            <nav className='navbar nav-top'>
+                <Link to={'/'} className='navbar-brand'><img width="20" height="20" src={brandImage} /> Shelter Helper </Link>
+            </nav>
+            <nav className='navbar navbar-expand-sm navbar-dark bg-dark nav-bottom'>
+                <div className='collapse navbar-collapse'>
+                <div className='navbar-nav'>
+                    <NavLink className='nav-link' exact to={'/'} activeClassName='active'>Home</NavLink>
+                        <NavLink className='nav-link' exact to={'/pets'} activeClassName='active'>Pets</NavLink>
+                        <NavLink className='nav-link' to={'/parents'} activeClassName='active'>Foster Parents</NavLink>
+                        <NavLink className='nav-link' to={'/sponsors'} activeClassName='active'>Sponsors</NavLink>
+                        <NavLink className='nav-link' to={'/campaigns'} activeClassName='active'>Campaigns</NavLink>
+                        <NavLink className='nav-link' to={'/contact'} activeClassName='active'>Contact</NavLink>
                 </div>
-                <div className='clearfix'></div>
-                <div className='nav navbar-nav'>
-                    <ul className='nav navbar-nav'>
-                        <li className='nav-item'><NavLink className='nav-link' exact to={'/'} activeClassName='active'><span className='sr-only'></span>Home</NavLink></li>
-                        <li className='nav-item'><NavLink className='nav-link' exact to={'/pets'} activeClassName='active'><span className='glyphicon glyphicon-home'></span>Pets</NavLink></li>
-                        <li className='nav-item'><NavLink className='nav-link' to={'/parents'} activeClassName='active'><span className='glyphicon glyphicon-home'></span>Foster Parents</NavLink></li>
-                        <li className='nav-item'><NavLink className='nav-link' to={'/sponsors'} activeClassName='active'><span className='glyphicon glyphicon-home'></span>Sponsors</NavLink></li>
-                        <li className='nav-item'><NavLink className='nav-link' to={'/campaigns'} activeClassName='active'><span className='glyphicon glyphicon-home'></span>Campaigns</NavLink></li>
-                        <li className='nav-item'><NavLink className='nav-link' to={'/contact'} activeClassName='active'><span className='glyphicon glyphicon-home'></span>Contact</NavLink></li>
-                    </ul>
                 </div>
-            </div>
-            <div className='row'>
-                <div className='col-sm-12'>
-                    {this.props.children}
-                </div>
-            </div>
+            </nav>
+            <nav className='navbar nav-bottom'/>
         </div>;
 
     }

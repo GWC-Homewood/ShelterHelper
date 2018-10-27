@@ -9,33 +9,44 @@ li.link-active a:focus {
     background-color: #4189C7;
     color: white;
 }
-
-.navbar ul {
-    float: none;
+body{
+    background-color: whitesmoke;
+    color: ThreeDDarkShadow;
+}
+.nav-top{
+    color: whitesmoke !important;
+    background-color:darkslateblue;
+}
+.nav-bottom{
+    background-color:lavenderblush;
+}
+.navbar-brand{
+    color: whitesmoke;  
+}
+.navbar-brand:hover{
+    color: white;
 }
 
-.navbar li {
+.nav-link {
     float: none;
-    font-size: 20px;
-    margin: 6px;
+    font-size: 14px;
+    margin-left: 6px;
     color: whitesmoke;
 }
 
-    .navbar li a {
-        padding: 10px 16px;
-        border-radius: 4px;
-    }
-
-.navitem {
-    color: whitesmoke;
+h4{
+    font-weight: 700;
 }
 
 .card-header {
-    background-color: #337ab7;
-    color: white;
-    font-weight: bold;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 800;
     border-color: #337ab7;
-    padding-top: 5px;
+    padding-left: 5px;
+    border-bottom-style: solid;
+    border-top-width:0px;
+    border-bottom-width: 5px;
 }
 
 .card-header-alert {
@@ -44,18 +55,14 @@ li.link-active a:focus {
 }
 
 .card-footer {
-    border-color: #337ab7;
-    border-width: thin;
-    border-style: solid;
-    font-size: 12px;
+    font-size: 14px;
+    background-color: white;
 }
 
 
 .card-body {
-    border-color: #337ab7;
-    border-width: thin;
-    border-style: solid;
     font-size: 12px;
+    border-style: none;
 }
 
 .card-body-alert {
@@ -68,8 +75,7 @@ li.link-active a:focus {
 }
 
 .card {
-    border-width: thin;
-    border-style: solid;
+    border-style: none;
 }
 
 

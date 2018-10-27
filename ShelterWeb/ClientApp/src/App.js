@@ -4,8 +4,8 @@ import Layout from './components/Layout';
 import Home from './components/Home';
 import Counter from './components/Counter';
 import FetchData from './components/FetchData';
-import PetSearchMain from './containers/Pets/Search/petSearch-Main';
 import petSearchMain from './containers/Pets/Search/petSearch-Main';
+import petCreateMain from './containers/Pets/Create/petCreate-main';
 
 export default () => (
   <Layout>
@@ -13,5 +13,6 @@ export default () => (
         <Route path='/counter' component={Counter} />
         <Route path='/fetchdata/:startDateIndex?' component={FetchData} />
         <Route path='/pets' component={petSearchMain} />
+        <Route path='/addPet' component={petCreateMain}/>
   </Layout>
 );
