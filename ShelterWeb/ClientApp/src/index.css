@@ -78,6 +78,9 @@ h4{
     border-style: none;
 }
 
+.btn-group{
+    margin-right: 10px;
+}
 
 .k-combobox {
     width: 100%;
@@ -88,6 +91,9 @@ div.k-popup .k-item {
     font-size: 12px;
 }
 
+.float-right{
+    
+}
 .k-dropdown .k-dropdown-wrap {
     height: 14px;
 }
